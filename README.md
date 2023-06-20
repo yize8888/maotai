@@ -23,3 +23,6 @@ Thanks to everyone who supported me before, this repository is currently suspend
 本项目仅做个人学习用途，我不会对因为滥用该项目导致的任何问题负责。
 
 ### 作者QQ：929375038
+
+Github地址：https://github.com/yize8888/maotai.git
+Gitee地址：https://gitee.com/yize8888/maotai.git
