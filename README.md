@@ -12,6 +12,8 @@ Thanks to everyone who supported me before, this repository is currently suspend
 ```
 
 # 茅台预约脚本（葫芦娃）
+
+青龙拉库指令 ql repo https://github.com/yize8888/maotai.git
 1. 环境变量 XLTH_COOKIE 新联惠购
 2. 环境变量 GLYP_COOKIE 贵旅优品
 3. 环境变量 KGLG_COOKIE 空港乐购
