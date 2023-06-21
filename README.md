@@ -31,6 +31,8 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 6.环境变量 GYQP_COOKIE 贵盐黔品
 
+7.环境变量 LLSC_COOKIE 乐旅商城
+
 # 声明
 本项目仅做个人学习用途，我不会对因为滥用该项目导致的任何问题负责。
 
