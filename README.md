@@ -2,7 +2,7 @@
 
 ```
 2023/06/20
-这个项目是从2023年6月开始的，至今已持续了4个月之久。感谢期间捐赠过我的所有人。
+这个项目是从2023年6月开始的，感谢期间捐赠过我的所有人。
 我对于作弊本身并无兴趣，只是对逆向工程和破解稍有兴趣，喜欢自己写点小玩意。
 项目之所以免费放出，是因为我讨厌那些靠卖盈利的人。
 
@@ -16,6 +16,8 @@ Thanks to everyone who supported me before, this repository is currently suspend
 青龙拉库指令（国内） ql repo https://gitee.com/yize8888/maotai.git "" "sendNotify"
 
 青龙拉库指令（海外） ql repo https://github.com/yize8888/maotai.git "" "sendNotify"
+
+小程序抓包工具：https://yize888.lanzoum.com/iDEkb0zo0ryb
 
 1.环境变量 XLTH_COOKIE 新联惠购
 
