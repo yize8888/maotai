@@ -17,7 +17,11 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 青龙拉库指令（海外） ql repo https://github.com/yize8888/maotai.git "" "sendNotify"
 
+葫芦娃在线预约平台近期正在开发中，大家稍安勿躁（内置IP代理池，解放双手，一键代挂）。
+
 小程序抓包工具：https://yize888.lanzoum.com/iDEkb0zo0ryb
+
+QQ交流群（加我QQ的太多了）：http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ksOXP4yepTlsqTzYADYPplDTHmEe6d05&authKey=xuh%2F%2BMHo%2BfO5xi1bCOjAeNoTLE4zBQWxXoEX84%2FRaShGpVxxZDV8nK0o3BM2Gum4&noverify=0&group_code=675608101
 
 1.环境变量 XLTH_COOKIE 新联惠购
 
