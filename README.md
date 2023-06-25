@@ -21,7 +21,7 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 小程序抓包工具：https://yize888.lanzoum.com/iDEkb0zo0ryb
 
-QQ交流群（加我QQ的太多了）：http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ksOXP4yepTlsqTzYADYPplDTHmEe6d05&authKey=xuh%2F%2BMHo%2BfO5xi1bCOjAeNoTLE4zBQWxXoEX84%2FRaShGpVxxZDV8nK0o3BM2Gum4&noverify=0&group_code=675608101
+QQ交流群（加我QQ的太多了）：[点击加入QQ群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ksOXP4yepTlsqTzYADYPplDTHmEe6d05&authKey=xuh%2F%2BMHo%2BfO5xi1bCOjAeNoTLE4zBQWxXoEX84%2FRaShGpVxxZDV8nK0o3BM2Gum4&noverify=0&group_code=675608101)
 
 1.环境变量 XLTH_COOKIE 新联惠购
 
