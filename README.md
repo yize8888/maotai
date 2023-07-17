@@ -13,6 +13,8 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 # 茅台预约脚本（葫芦娃）
 
+自动预约平台（测试阶段）：http://maotai.pro
+
 青龙拉库指令（国内） ql repo https://gitee.com/yize8888/maotai.git "" "sendNotify"
 
 青龙拉库指令（海外） ql repo https://github.com/yize8888/maotai.git "" "sendNotify"
