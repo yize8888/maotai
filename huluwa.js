@@ -6,13 +6,13 @@
  cron: 30 8 * * *
  const $ = new Env("葫芦娃预约");
 
- 自行抓包把token(一般在请求头里)填到变量中, 多账号用换行(\n)隔开
+ 自行抓包把token(一般在请求头里)填到变量中, 多账号用换行(按回车键)隔开
 
  环境变量 XLTH_COOKIE 新联惠购
  环境变量 GLYP_COOKIE 贵旅优品
  环境变量 KGLG_COOKIE 空港乐购
  环境变量 HLQG_COOKIE 航旅黔购
- 环境变量 ZHCS_COOKIE 遵行出山
+ 环境变量 ZHCS_COOKIE 遵航出山
  环境变量 GYQP_COOKIE 贵盐黔品
  环境变量 LLSC_COOKIE 乐旅商城
  */
