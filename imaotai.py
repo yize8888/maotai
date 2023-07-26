@@ -8,8 +8,8 @@ import base64
 import json
 
 '''
+cron: 5 9 * * *
 new Env("i茅台预约")
-cron 5 9 * * *
 '''
 
 from notify import send
