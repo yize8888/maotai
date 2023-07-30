@@ -27,11 +27,14 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 ## 拉库指令
 
-青龙拉库指令（国内） `ql repo https://gitee.com/yize8888/maotai.git "" "sendNotify"`
+青龙拉库指令（海外） `ql repo https://github.com/yize8888/maotai.git`
 
-青龙拉库指令（海外） `ql repo https://github.com/yize8888/maotai.git "" "sendNotify"`
+青龙拉库指令（国内） `ql repo https://gitee.com/yize8888/maotai.git`
 
 ## 环境变量
+
+- 抓包工具（海外）： [点击进入](https://github.com/yize8888/maotai/releases) 
+- 抓包工具（国内）： [点击进入](https://gitee.com/yize8888/maotai/releases)
 
 | 平台名称 | 环境变量 | Token |
 |--------|-------------|-------------|
