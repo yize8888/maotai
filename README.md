@@ -13,7 +13,7 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 | 仓库                                                 | Star                                                                                                                                 | 简介         |
 |----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| [Github仓库](https://github.com/yize8888/maotai.git) | [![GitHub stars](https://img.shields.io/github/stars/yize8888/maotai.svg?style=social&label=Stars)](https://github.com/yize8888/maotai.git) | 国外用户可使用此仓库 |
+| [Github仓库](https://github.com/yize8888/maotai.git) | [![GitHub stars](https://img.shields.io/github/stars/yize8888/maotai.svg?style=social&label=Stars)](https://github.com/yize8888/maotai.git) | 海外用户可使用此仓库 |
 | [Gitee仓库](https://gitee.com/yize8888/maotai.git)   | [![Gitee stars](https://gitee.com/yize8888/maotai/badge/star.svg?theme=white)](https://gitee.com/yize8888/maotai.git)                       | 国内用户可使用此仓库 |                                   | 葫芦娃小程序自动预约 |
 
 
