@@ -48,7 +48,9 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 ## 关注&交流
 
-欢迎各位老哥进群**技术交流**（只交流技术，不谈茅台）[![点击加入TG群](https://img.shields.io/badge/Telegram-Group-blue)](https://t.me/maotai_pro) | [![点击加入QQ群](https://img.shields.io/badge/TencentQQ-Group-blue)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ksOXP4yepTlsqTzYADYPplDTHmEe6d05&authKey=xuh%2F%2BMHo%2BfO5xi1bCOjAeNoTLE4zBQWxXoEX84%2FRaShGpVxxZDV8nK0o3BM2Gum4&noverify=0&group_code=675608101)
+欢迎各位老哥进群**技术交流**（只交流技术，不谈茅台）
+
+[![点击加入TG群](https://img.shields.io/badge/Telegram-Group-blue)](https://t.me/maotai_pro) [![点击加入QQ群](https://img.shields.io/badge/TencentQQ-Group-blue)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ksOXP4yepTlsqTzYADYPplDTHmEe6d05&authKey=xuh%2F%2BMHo%2BfO5xi1bCOjAeNoTLE4zBQWxXoEX84%2FRaShGpVxxZDV8nK0o3BM2Gum4&noverify=0&group_code=675608101)
 
 私信不解决项目问题，如有问题请提交 issues！
 
