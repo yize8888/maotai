@@ -296,7 +296,7 @@ if __name__ == '__main__':
                                      user_id, token, device_id)
                         s += itemCode + \
                             '_' + name + '---------------' + res + '\n'
-                if not ck:
+                if ck:
                     r = getUserEnergyAward(device_id, ck)
                     s += userName + '_' + mobile + '---------------' + \
                         "小茅运:" + r + '\n'
