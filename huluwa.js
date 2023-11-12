@@ -1,6 +1,5 @@
 /**
- 葫芦娃预约 v1.05
- 作者QQ：455997190
+ 葫芦娃预约 v1.06
 
  cron: 30 8 * * *
  const $ = new Env("葫芦娃预约");
@@ -16,8 +15,6 @@
  环境变量 LLSC_COOKIE 乐旅商城
  环境变量 YLQX_COOKIE 驿路黔寻
  */
-
-console.log('自动预约平台：https://maotai.pro:2023');
 
 const SPLIT = "\n"; // 分割符（可自定义）
 
