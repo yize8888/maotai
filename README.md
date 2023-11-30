@@ -15,6 +15,8 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 本项目由nodejs开发，系统会每日进行预约葫芦娃，i茅台
 
+葫芦娃中奖通知暂时没做，有查询接口的可以在 issues中 提供下方便后期对接
+
 推荐一个在线预约平台：[https://github.com/bxgh01/maotai.git](https://github.com/bxgh01/maotai.git)（支持葫芦娃+i茅台在线预约）
 
 ## 拉库指令
@@ -23,7 +25,7 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 ## 环境变量
 
-- 抓包工具： [点击进入](https://github.com/bxgh01/maotai/releases) 
+- 抓包工具（11.30更新）： [点击进入](https://github.com/bxgh01/maotai/releases) 
 
 | 平台名称 | 环境变量 | Token |
 |--------|-------------|-------------|
