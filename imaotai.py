@@ -273,8 +273,12 @@ if __name__ == '__main__':
     if len(mt_token_list) > 0:
         for mt_token in mt_token_list:
             userCount += 1
-            province, city, lng, lat, device_id, token, ck = mt_token.split(
-                ',')
+            try:
+                province, city, lng, lat, device_id, token, ck = mt_token.split(',')
+            except Exception as e:
+                s = "MTTokenD未正确配置，格式'省份,城市,经度,维度,设备id,token,MT-Token-Wap(抓包小茅运)'"
+                send("i茅台申购+小茅运", s)
+                exit()
             time_keys = str(
                 int(time.mktime(datetime.date.today().timetuple())) * 1000)
             get_map()
@@ -297,8 +301,12 @@ if __name__ == '__main__':
                         s += itemCode + \
                             '_' + name + '---------------' + res + '\n'
                 if ck:
-                    r = getUserEnergyAward(device_id, ck)
-                    s += userName + '_' + mobile + '---------------' + \
+                    if ck == "\'\'" : 
+                        s += userName + '_' + mobile + '---------------' + \
+                        "未设置MT-Token-Wap，小茅运领取奖励跳过" + '\n'
+                    else : 
+                        r = getUserEnergyAward(device_id, ck)
+                        s += userName + '_' + mobile + '---------------' + \
                         "小茅运:" + r + '\n'
                 s += userName + '_' + mobile + "正常结束任务"+'\n              \n'
             except Exception as e:
