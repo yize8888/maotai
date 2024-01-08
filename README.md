@@ -22,6 +22,7 @@ Thanks to everyone who supported me before, this repository is currently suspend
 ## 拉库指令
 
 青龙拉库指令 `ql repo https://github.com/yize8888/maotai.git`
+- 2024.01.08：更新龙茅抢购
 
 ## 环境变量
 
