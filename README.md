@@ -15,9 +15,9 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 本项目由nodejs开发，系统会每日进行预约葫芦娃，i茅台
 
-葫芦娃中奖通知暂时没做，有查询接口的可以在 issues中 提供下方便后期对接
+葫芦娃中奖通知暂时没做，有查询接口的可以在issues中 提供下方便后期对接
 
-在线预约平台正在开发新版本中，原有平台已废弃，请大家敬请期待，葫芦娃青龙脚本已开源2024-02-19
+在线预约平台正在开发新版本中，原有平台已废弃，请大家敬请期待
 
 ~~推荐一个在线预约平台：[https://github.com/bxgh01/maotai.git](https://github.com/bxgh01/maotai.git)（支持葫芦娃+i茅台在线预约）~~
 
@@ -45,6 +45,8 @@ Thanks to everyone who supported me before, this repository is currently suspend
 私信不解决项目问题，如有问题请提交 issues！[![GitHub stars](https://img.shields.io/github/stars/yize8888/maotai.svg?style=social&label=Stars)](https://github.com/yize8888/maotai.git)
 
 ## 贡献代码
+
+2024-02-19葫芦娃青龙脚本已开源
 
 若您有好的想法，发现一些 **BUG** 并修复了，欢迎提交 **Pull Request** 参与开源贡献
 
