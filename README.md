@@ -38,7 +38,7 @@ Thanks to everyone who supported me before, this repository is currently suspend
 | 遵航出山 | ZHCS_COOKIE | 这里填写Token |
 | 贵盐黔品 | GYQP_COOKIE | 这里填写Token |
 | 乐旅商城 | LLSC_COOKIE | 这里填写Token |
-| 驿路黔寻 | YLQX_APPID | 这里填写Token |
+| 驿路黔寻 | YLQX_COOKIE | 这里填写Token |
 
 ## 关注&交流
 
