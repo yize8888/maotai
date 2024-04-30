@@ -27,7 +27,7 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 ## 环境变量
 
-- 抓包工具（11.30更新）： [点击进入](https://github.com/bxgh01/maotai/releases) 
+- 抓包工具（4.30更新）： [点击进入](https://github.com/yize8888/maotai/releases) （PS：需安装指定微信版本）
 
 | 平台名称 | 环境变量 | Token |
 |--------|-------------|-------------|
