@@ -26,6 +26,7 @@ mt_r = 'clips_OlU6TmFRag5rCXwbNAQ/Tz1SKlN8THcecBp/'
 #if not res_map:
 #    res_map = {"10941": "贵州茅台酒（甲辰龙年）", "10942": "贵州茅台酒（甲辰龙年）x2"}
 res_map = {"10941": "贵州茅台酒（甲辰龙年）", "10942": "贵州茅台酒（甲辰龙年）x2"}
+print('拟预约商品：')
 print(res_map)
 
 def mt_add(itemId, shopId, sessionId, userId, token, Device_ID):
@@ -89,6 +90,36 @@ def get_session_id(device_id, token):
     itemCodes = [item.get('itemCode') for item in itemList]
     return sessionId, itemCodes
 
+# 打印所有商品列表
+def get_shop_items(sessionId, device_id, token, province, city):
+    headers = {
+        'mt-device-id': device_id,
+        'mt-user-tag': '0',
+        'mt-lat': '',
+        'accept': '*/*',
+        'mt-network-type': 'WIFI',
+        'mt-token': token,
+        'mt-bundle-id': 'com.moutai.mall',
+        'accept-language': 'zh-Hans-CN;q=1',
+        'mt-request-id': f'{int(time.time() * 1000)}',
+        'mt-r': mt_r,
+        'mt-app-version': mt_version,
+        'user-agent': 'iPhone 14',
+        'mt-lng': lng,
+        'mt-lat': lat
+    }
+
+    response = requests.get(
+        'https://static.moutai519.com.cn/mt-backend/xhr/front/mall/index/session/get/' +  time_keys, headers=headers)
+    item_list = response.json().get('data', {}).get("itemList", [])
+    # 创建一个空字典，用于存储 itemCode 和 title 的映射关系
+    item_code_title_map = {}
+    # 遍历 itemList，提取 itemCode 和 title，并将它们添加到字典中
+    for item in item_list:
+        item_code_title_map[item.get("itemCode")] = item.get("title")
+    print('可预约商品列表：')
+    print(item_code_title_map)
+    return item_code_title_map
 
 def get_shop_item(sessionId, itemId, device_id, token, province, city):
     headers = {
@@ -275,6 +306,7 @@ if __name__ == '__main__':
             userCount += 1
             try:
                 province, city, lng, lat, device_id, token, ck = mt_token.split(',')
+                province, city, lng, lat, device_id, token, ck = province.strip(), city.strip(), lng.strip(), lat.strip(), device_id.strip(), token.strip(), ck.strip()
             except Exception as e:
                 s = "MTTokenD未正确配置，格式'省份,城市,经度,维度,设备id,token,MT-Token-Wap(抓包小茅运)'"
                 send("i茅台申购+小茅运", s)
@@ -291,6 +323,7 @@ if __name__ == '__main__':
                     continue
                 s += "第"+str(userCount)+"个用户----------------"+userName + '_' + \
                     mobile + "开始任务" + "----------------"+'\n'
+                items = get_shop_items(sessionId, device_id, token, province, city)
                 for itemCode in itemCodes:
                     name = res_map.get(str(itemCode))
                     if name:
