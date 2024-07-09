@@ -6,7 +6,8 @@ import time
 import requests
 import base64
 import json
-
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad
 '''
 cron: 5 9 * * *
 new Env("i茅台预约")
@@ -18,7 +19,7 @@ from notify import send
 # MTTokenD是茅台预约参数，多个请换行，格式'省份,城市,经度,维度,设备id,token,MT-Token-Wap(抓包小茅运)'
 # Mt_Version是app版本号如 1.3.6 必填（填最新版本，目前好像没法获取）
 # MT-Token-Wap参数是小茅运的领奖励，不需要的话MTTokenD格式改成 省份,城市,经度,维度,设备id,token,''
-
+# 依赖pycryptodome
 p_c_map = {}
 mt_r = 'clips_OlU6TmFRag5rCXwbNAQ/Tz1SKlN8THcecBp/'
 # 下面定义的是申请哪几个，可通过iMT_Products环境变量来设置，比如{"10941": "贵州茅台酒（甲辰龙年）", "2478": "贵州茅台酒（珍品）", "10942": "贵州茅台酒（甲辰龙年）x2"}
@@ -28,26 +29,29 @@ mt_r = 'clips_OlU6TmFRag5rCXwbNAQ/Tz1SKlN8THcecBp/'
 res_map = {"10941": "贵州茅台酒（甲辰龙年）", "10942": "贵州茅台酒（甲辰龙年）x2"}
 print('拟预约商品：')
 print(res_map)
+#加密
+def aes_cbc_encrypt(data, key, iv):
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv.encode('utf-8'))
+    padded_data = pad(data.encode('utf-8'), AES.block_size)
+    encrypted_data = cipher.encrypt(padded_data)
+    return base64.b64encode(encrypted_data).decode('utf-8')
 
 def mt_add(itemId, shopId, sessionId, userId, token, Device_ID):
     MT_K = f'{int(time.time() * 1000)}'
-    r = requests.get(
-        f'http://82.157.10.108:8086/get_mtv?DeviceID={Device_ID}&MTk={MT_K}&version={mt_version}&key=yaohuo')
     headers = {'User-Agent': 'iPhone 14',
                'MT-Token': token,
                'MT-Network-Type': 'WIFI', 'MT-User-Tag': '0',
-               'MT-R': mt_r, 'MT-Lat': '', 'MT-K': MT_K,
-               'MT-Lng': '', 'MT-Info': '028e7f96f6369cafe1d105579c5b9377', 'MT-APP-Version': mt_version,
+               'MT-R': mt_r, 'MT-K': MT_K,
+               'MT-Info': '028e7f96f6369cafe1d105579c5b9377', 'MT-APP-Version': mt_version,
                'MT-Request-ID': f'{int(time.time() * 1000)}', 'Accept-Language': 'zh-Hans-CN;q=1',
-               'MT-Device-ID': Device_ID, 'MT-V': r.text,
+               'MT-Device-ID': Device_ID, 
                'MT-Bundle-ID': 'com.moutai.mall',
                'mt-lng': lng,
                'mt-lat': lat}
     d = {"itemInfoList": [{"count": 1, "itemId": str(itemId)}], "sessionId": sessionId, "userId": str(userId),
          "shopId": str(shopId)}
-    r = requests.get('http://82.157.10.108:8086/get_actParam?key=yaohuo&actParam=' + base64.b64encode(
-        json.dumps(d).replace(' ', '').encode('utf8')).decode())
-    d['actParam'] = r.text
+    r = aes_cbc_encrypt(json.dumps(d),'qbhajinldepmucsonaaaccgypwuvcjaa','2018534749963515')
+    d['actParam'] = r
     json_data = d
     response = requests.post('https://app.moutai519.com.cn/xhr/front/mall/reservation/add', headers=headers,
                              json=json_data)
