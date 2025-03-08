@@ -56,6 +56,10 @@ Thanks to everyone who supported me before, this repository is currently suspend
 
 发起 pull request 请求，提交到 master 分支，等待作者合并
 
+## star 趋势图
+
+![Stargazers over time](https://starchart.cc/yize8888/maotai.svg)
+
 ## 友情链接
 
 Campus-imaotai：[https://github.com/oddfar/campus-imaotai](https://github.com/oddfar/campus-imaotai)（支持i茅台+开源）
